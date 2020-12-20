@@ -1,0 +1,21 @@
+name: GH PAGES
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    container: node:12.16.2
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: deploy doc
+        run: yarn deploy

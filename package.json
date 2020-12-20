@@ -1,0 +1,13 @@
+{
+  "name": "api-doc",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "osor1o <osor1o@hotmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "gh-pages -d public"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
