@@ -23,6 +23,6 @@ jobs:
           REPO_ORIGIN: ${{ secrets.REPO_ORIGIN }}
           REPO_EMAIL: ${{ secrets.REPO_EMAIL }}
         run: |
-          git config user.name ${GITHUB_ACTOR}
-          git config user.email ${REPO_EMAIL}
+          git --global config --global user.name ${GITHUB_ACTOR}
+          git config --global user.email ${REPO_EMAIL}
           yarn gh-pages -d public -r ${REPO_ORIGIN}
