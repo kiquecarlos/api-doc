@@ -18,4 +18,7 @@ jobs:
         run: yarn install
 
       - name: deploy doc
-        run: yarn deploy
+        shell: bash
+        env:
+          REPO_ORIGIN: ${{ secrets.REPO_ORIGIN }}
+        run: yarn gh-pages -d public -r ${REPO_ORIGIN}
