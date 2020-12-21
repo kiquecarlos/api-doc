@@ -10826,7 +10826,7 @@ var app = (function () {
   }
   return (async function () {
     const e = document.getElementById("app"),
-      t = `${e.getAttribute("data-root") || ""}/api-doc/insomnia.json`;
+      t = `${e.getAttribute("data-root") || ""}/mixmedoc/insomnia.json`;
     window.INSOMNIA_URL = t;
     try {
       const n = await fetch(t, {
