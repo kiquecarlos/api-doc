@@ -1,8 +1,8 @@
 {
-  "name": "api-doc",
+  "name": "mixmedoc",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "osor1o <osor1o@hotmail.com>",
+  "author": "kiquecarlos <kiquecarlos@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "gh-pages": "^3.1.0"
